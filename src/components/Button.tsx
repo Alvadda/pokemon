@@ -6,7 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: FC<ButtonProps> = ({ btnStyle, children, ...rest }) => {
   return (
-    <button className={` text-black font-bold py-2 px-4 rounded text-2xl ${btnStyle}`} {...rest}>
+    <button className={` text-black font-bold py-2 px-4 rounded text-2xl ${btnStyle} active:scale-90`} {...rest}>
       {children}
     </button>
   )
